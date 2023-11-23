@@ -64,7 +64,7 @@ char calculateGrade(int score1, int score2, int score3)
     else if (averageScore < 50)
     {
         return 'F';
-        }
+    }
 }
 
 void printResults(char grade)
