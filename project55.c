@@ -1,22 +1,23 @@
 #include <stdio.h>
 
-void angleInput(int *angle1);
-void printsQuadrant(int angle);
+void angleInput(int *angle1); //Function to read angle
+void printsQuadrant(int angle); //Function to print what quadrant the angle is in and prints it
 
 int main() {
     int angle1;
-    angleInput(&angle1);
-    printsQuadrant(angle1);
+    angleInput(&angle1); // all to read the angle given by the user
+    printsQuadrant(angle1); //Call to determine what quadrant the angle is in and prints it
 
     return 0;
 }
 
 void angleInput(int *angle1) {
-    printf("Enter angle (0 - 360): ");
-    scanf("%d", angle1);
+    printf("Enter angle (0 - 360): "); // User input
+    scanf("%d", angle1); 
 }
 
 void printsQuadrant(int angle) {
+    //Process and output
     if (angle < 0 && angle < 90) {
         printf("Quadrant I");
     } else if (angle > 90 && angle < 180) {
